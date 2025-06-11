@@ -43,4 +43,28 @@ let names = adults.map(function (user) {
 });
 console.log(names);
 
+Задание 7.7.4
+let person = {
+  name: "Anna",
+  age: 25
+};
+function setFullName(fullName) {
+  this.fullName = fullName;
+}
+let setPersonFullName = setFullName.bind(person);
+setPersonFullName("Ivan Petrov");
+console.log(person.fullName);
+
+Задание 7.7.5
+function getUniqueSorted(numbers) {
+  let uniqueNumbers = Array.from(new Set(numbers));
+  uniqueNumbers.sort(function (a, b) {
+    return a - b;
+  });
+  return uniqueNumbers;
+}
+let numbers = [5, 3, 8, 3, 1, 5, 7, 8, 2];
+let result = getUniqueSorted(numbers);
+console.log(result);
+
 
