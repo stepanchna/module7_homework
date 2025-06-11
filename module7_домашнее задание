@@ -2,7 +2,6 @@
 function printInfo() {
   console.log("Name:" + this.name + ", Age:" + this.age);
 }
-
 let person = {
   name: "Anna",
   age: 25,
@@ -25,8 +24,23 @@ function calculate(a, b, operator) {
 }
 
 let args = [2, 3, "+"];
-
 let result = calculate.apply(null, args);
 console.log(result);
+
+Задание 7.7.3
+let users = [
+  { name: "Natya", age: 22 },
+  { name: "Anna", age: 17 },
+  { name: "Irina", age: 30 },
+  { name: "Maria", age: 15 },
+  { name: "Elena", age: 19 },
+];
+let adults = users.filter(function (user) {
+  return user.age >= 18;
+});
+let names = adults.map(function (user) {
+  return user.name;
+});
+console.log(names);
 
 
