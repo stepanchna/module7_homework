@@ -1,0 +1,10 @@
+Задание 7.7.1
+function printInfo() {
+  console.log("Name:" + this.name + ", Age:" + this.age);
+}
+
+let person = {
+  name: "Anna",
+  age: 25,
+};
+printInfo.call(person);
