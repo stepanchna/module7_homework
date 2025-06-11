@@ -8,3 +8,25 @@ let person = {
   age: 25,
 };
 printInfo.call(person);
+
+Задание 7.7.2
+function calculate(a, b, operator) {
+  if (operator === "+") {
+    return a + b;
+  } else if (operator === "-") {
+    return a - b;
+  } else if (operator === "*") {
+    return a * b;
+  } else if (operator === "/") {
+    return a / b;
+  } else {
+    return "Unknown operator";
+  }
+}
+
+let args = [2, 3, "+"];
+
+let result = calculate.apply(null, args);
+console.log(result);
+
+
