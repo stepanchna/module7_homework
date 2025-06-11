@@ -29,7 +29,7 @@ console.log(result);
 
 Задание 7.7.3
 let users = [
-  { name: "Natya", age: 22 },
+  { name: "Nastya", age: 22 },
   { name: "Anna", age: 17 },
   { name: "Irina", age: 30 },
   { name: "Maria", age: 15 },
